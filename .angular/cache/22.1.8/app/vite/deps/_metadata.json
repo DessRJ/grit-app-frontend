@@ -1,0 +1,90 @@
+{
+  "hash": "41f4382d",
+  "configHash": "ebac6871",
+  "lockfileHash": "8a2e196f",
+  "browserHash": "5308b8d0",
+  "optimized": {
+    "@angular/core": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "d3170680",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "97017566",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "4ae49761",
+      "needsInterop": false
+    },
+    "@ionic/angular": {
+      "src": "../../../../../../node_modules/@ionic/angular/dist/standalone/index.js",
+      "file": "@ionic_angular.js",
+      "fileHash": "ab7c421c",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "core-GC7q_RMC": {
+      "file": "core-GC7q_RMC.js",
+      "isDynamicEntry": false
+    },
+    "p-B4IBdPVJ-DS8-O5Lc": {
+      "file": "p-B4IBdPVJ-DS8-O5Lc.js",
+      "isDynamicEntry": false
+    },
+    "p-BMPN55of-Bt4HbXz4": {
+      "file": "p-BMPN55of-Bt4HbXz4.js",
+      "isDynamicEntry": false
+    },
+    "p-BVNUhOOf-DItmcFbp": {
+      "file": "p-BVNUhOOf-DItmcFbp.js",
+      "isDynamicEntry": true
+    },
+    "p-C1AxSUnp-Duo66WAm": {
+      "file": "p-C1AxSUnp-Duo66WAm.js",
+      "isDynamicEntry": true
+    },
+    "p-C7r5Gja6-BD1Ds0U0": {
+      "file": "p-C7r5Gja6-BD1Ds0U0.js",
+      "isDynamicEntry": false
+    },
+    "p-Ct2aBEue-BePt2maM": {
+      "file": "p-Ct2aBEue-BePt2maM.js",
+      "isDynamicEntry": false
+    },
+    "p-D0YpjgON-DlbOmPwz": {
+      "file": "p-D0YpjgON-DlbOmPwz.js",
+      "isDynamicEntry": false
+    },
+    "p-DD92Fw3n-B3sKf5Kt": {
+      "file": "p-DD92Fw3n-B3sKf5Kt.js",
+      "isDynamicEntry": true
+    },
+    "p-V1THdfzs-CDzZH5MB": {
+      "file": "p-V1THdfzs-CDzZH5MB.js",
+      "isDynamicEntry": false
+    },
+    "p-YNnH1_Hs-CxRIjkBD": {
+      "file": "p-YNnH1_Hs-CxRIjkBD.js",
+      "isDynamicEntry": true
+    },
+    "p-ZjP4CjeZ-BnW-oeAv": {
+      "file": "p-ZjP4CjeZ-BnW-oeAv.js",
+      "isDynamicEntry": false
+    },
+    "platform-browser-FOV5-sfD": {
+      "file": "platform-browser-FOV5-sfD.js",
+      "isDynamicEntry": false
+    },
+    "router-BALWj9_0": {
+      "file": "router-BALWj9_0.js",
+      "isDynamicEntry": false
+    }
+  }
+}
