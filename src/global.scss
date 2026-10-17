@@ -1,37 +1,114 @@
-/*
- * App Global CSS
- * ----------------------------------------------------------------------------
- * Put style rules here that you want to apply globally. These styles are for
- * the entire app and not just one component. Additionally, this file can be
- * used as an entry point to import other CSS/Sass files to be included in the
- * output CSS.
- * For more information on global stylesheets, visit the documentation:
- * https://ionicframework.com/docs/layout/global-stylesheets
- */
-
-/* Core CSS required for Ionic components to work properly */
 @import "@ionic/angular/css/core.css";
-
-/* Basic CSS for apps built with Ionic */
 @import "@ionic/angular/css/normalize.css";
 @import "@ionic/angular/css/structure.css";
 @import "@ionic/angular/css/typography.css";
 @import "@ionic/angular/css/display.css";
-
-/* Optional CSS utils that can be commented out */
 @import "@ionic/angular/css/padding.css";
 @import "@ionic/angular/css/float-elements.css";
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+@import "@fontsource-variable/nunito/index.css";
 
-/**
- * Ionic Dark Mode
- * -----------------------------------------------------
- * For more info, please see:
- * https://ionicframework.com/docs/theming/dark-mode
- */
+html, body { background: var(--g-bg); color: var(--g-ink); font-family: var(--ion-font-family); -webkit-font-smoothing: antialiased; }
 
-/* @import "@ionic/angular/css/palettes/dark.always.css"; */
-/* @import "@ionic/angular/css/palettes/dark.class.css"; */
-@import '@ionic/angular/css/palettes/dark.system.css';
+/* El contenido se centra como una columna móvil también en escritorio */
+ion-app { max-width: 520px; margin: 0 auto; box-shadow: 0 0 60px rgba(76, 54, 170, 0.12); }
+@media (min-width: 560px) { html { background: #e9e5fb; } }
+
+ion-content.page { --background: var(--g-page); --padding-top: 0; }
+ion-header ion-toolbar { --background: transparent; --border-width: 0; --color: var(--g-ink); }
+ion-header { box-shadow: none; &::after { display: none; } }
+ion-title.page-title { font-weight: 900; font-size: 22px; letter-spacing: -0.3px; }
+
+.wrap { padding: 8px 18px 28px; display: flex; flex-direction: column; gap: 16px; }
+.wrap-tabs { padding-bottom: 96px; }
+
+h1, h2, h3 { margin: 0; font-weight: 900; letter-spacing: -0.3px; }
+p { margin: 0; }
+.muted { color: var(--g-muted); }
+.small { font-size: 13px; }
+.xs { font-size: 11.5px; }
+.bold { font-weight: 800; }
+.center { text-align: center; }
+.grow { flex: 1; min-width: 0; }
+.row { display: flex; align-items: center; gap: 12px; }
+.col { display: flex; flex-direction: column; gap: 8px; }
+.between { justify-content: space-between; }
+.wrapflex { flex-wrap: wrap; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+
+.title-grad { background: var(--g-grad-brand); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+/* ---------- Tarjetas ---------- */
+.card { background: var(--g-card); border-radius: var(--g-radius); box-shadow: var(--g-shadow-sm); padding: 18px; border: 1.5px solid rgba(124, 58, 237, 0.08); }
+.card.flat { box-shadow: none; }
+.card.tap { cursor: pointer; transition: transform 0.15s, box-shadow 0.15s; &:active { transform: scale(0.98); } }
+.card.grad { color: #fff; border: 0; box-shadow: var(--g-shadow); }
+.grad-brand { background: var(--g-grad-brand); }
+.grad-sunset { background: var(--g-grad-sunset); }
+.grad-ocean { background: var(--g-grad-ocean); }
+.grad-fresh { background: var(--g-grad-fresh); }
+.grad-night { background: var(--g-grad-night); }
+.card.soft-purple { background: #f3edff; border-color: #e3d6ff; }
+.card.soft-green { background: #ecfdf5; border-color: #bbf7d0; }
+.card.soft-orange { background: #fff4e8; border-color: #fed7aa; }
+.card.soft-blue { background: #eff6ff; border-color: #bfdbfe; }
+.card.soft-red { background: #fff1f2; border-color: #fecdd3; }
+
+/* ---------- Botones ---------- */
+.btn { appearance: none; border: 0; font: inherit; font-weight: 800; font-size: 16px; padding: 14px 22px; border-radius: 999px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: transform 0.12s, box-shadow 0.2s, opacity 0.2s; color: #fff; background: var(--g-grad-brand); box-shadow: 0 8px 20px rgba(91, 52, 214, 0.32); &:active:not(:disabled) { transform: scale(0.97); } &:disabled { opacity: 0.45; box-shadow: none; cursor: not-allowed; } }
+.btn.block { width: 100%; }
+.btn.orange { background: var(--g-grad-sunset); box-shadow: 0 8px 20px rgba(255, 110, 60, 0.32); }
+.btn.green { background: var(--g-grad-fresh); box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3); }
+.btn.ghost { background: #fff; color: var(--g-purple); box-shadow: inset 0 0 0 2px #e3d6ff; }
+.btn.light { background: rgba(255, 255, 255, 0.95); color: var(--g-purple); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12); }
+.btn.danger { background: linear-gradient(135deg, #f87171, #dc2626); box-shadow: 0 8px 20px rgba(220, 38, 38, 0.28); }
+.btn.sm { padding: 9px 16px; font-size: 14px; }
+.btn.xl { padding: 17px 26px; font-size: 18px; }
+
+.icon-btn { appearance: none; border: 0; background: #fff; color: var(--g-purple); width: 40px; height: 40px; border-radius: 50%; display: inline-grid; place-items: center; font-size: 22px; box-shadow: var(--g-shadow-sm); cursor: pointer; &:active { transform: scale(0.94); } }
+
+/* ---------- Chips y badges ---------- */
+.chip { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 800; padding: 4px 10px; border-radius: 999px; background: #f1ecff; color: var(--g-purple); }
+.chip.green { background: #dcfce7; color: #047857; }
+.chip.orange { background: #ffedd5; color: #c2410c; }
+.chip.blue { background: #dbeafe; color: #1d4ed8; }
+.chip.red { background: #fee2e2; color: #b91c1c; }
+.chip.gray { background: #eceaf5; color: #6b7194; }
+.chip.white { background: rgba(255, 255, 255, 0.22); color: #fff; }
+
+/* ---------- Barras de progreso ---------- */
+.bar { height: 12px; border-radius: 999px; background: #e9e5fb; overflow: hidden; position: relative; }
+.bar > i { display: block; height: 100%; border-radius: 999px; background: var(--g-grad-brand); transition: width 0.7s cubic-bezier(.2,.8,.2,1); }
+.bar.on-dark { background: rgba(255, 255, 255, 0.28); > i { background: #fff; } }
+.bar.orange > i { background: var(--g-grad-sunset); }
+.bar.green > i { background: var(--g-grad-fresh); }
+
+/* ---------- Formularios ---------- */
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field > label { font-size: 13px; font-weight: 800; color: var(--g-ink); }
+.input, .textarea, select.input { appearance: none; width: 100%; font: inherit; font-size: 16px; color: var(--g-ink); background: #fff; border: 2px solid #e6e0fb; border-radius: 16px; padding: 13px 15px; outline: none; transition: border-color 0.15s, box-shadow 0.15s; &:focus { border-color: var(--g-violet); box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.16); } &::placeholder { color: #a7a3c4; } }
+.textarea { resize: vertical; min-height: 90px; line-height: 1.5; }
+.hint { font-size: 12px; color: var(--g-muted); font-weight: 600; }
+.hint.ok { color: #059669; }
+.hint.err { color: #dc2626; }
+
+/* ---------- Animaciones ---------- */
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+@keyframes pop { 0% { transform: scale(0.6); opacity: 0; } 70% { transform: scale(1.08); opacity: 1; } 100% { transform: scale(1); } }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@keyframes pulseRing { 0% { box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.45); } 100% { box-shadow: 0 0 0 22px rgba(124, 58, 237, 0); } }
+@keyframes spin { to { transform: rotate(360deg); } }
+.fade-up { animation: fadeUp 0.45s both; }
+.pop { animation: pop 0.45s both; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } }
+
+/* ---------- Tab bar ---------- */
+ion-tab-bar { --background: rgba(255, 255, 255, 0.96); --border: 0; margin: 0 12px 12px; width: auto; border-radius: 26px; box-shadow: 0 10px 30px rgba(76, 54, 170, 0.22); padding: 4px 4px; contain: none; height: 64px; }
+ion-tab-button { --color: #9a96bd; --color-selected: var(--g-purple); font-weight: 800; font-size: 11px; ion-icon { font-size: 23px; } }
+ion-tab-button.tab-selected ion-icon { transform: translateY(-1px) scale(1.08); }
+
+/* ---------- Toast / alertas ---------- */
+ion-toast { --border-radius: 16px; font-weight: 700; }

@@ -1,0 +1,7 @@
+# Copia este archivo como gritai.properties (está en .gitignore) y llena los valores.
+# Si la key queda vacía, la IA se desactiva y la app funciona 100 % sin conexión.
+gemini.apiKey=
+gemini.model=gemini-2.5-flash
+# Opcional (recomendado en producción): URL de un proxy propio que guarda la key en el servidor.
+# Si se define, la app NO envía ninguna key.
+gemini.proxyUrl=

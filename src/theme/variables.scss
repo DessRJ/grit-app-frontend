@@ -1,2 +1,50 @@
-// For information on how to create your own theme, please refer to:
-// https://ionicframework.com/docs/theming/
+/* Tema GritAI — paleta derivada del logo y la mascota */
+:root {
+  --g-navy: #1e1b6b;
+  --g-ink: #1f2340;
+  --g-muted: #6b7194;
+  --g-line: #e6e3f7;
+  --g-purple: #7c3aed;
+  --g-violet: #a855f7;
+  --g-blue: #2563eb;
+  --g-sky: #38bdf8;
+  --g-orange: #ff8a1f;
+  --g-pink: #ec4899;
+  --g-green: #10b981;
+  --g-red: #ef4444;
+  --g-yellow: #facc15;
+  --g-bg: #f6f4ff;
+  --g-card: #ffffff;
+  --g-radius: 24px;
+  --g-shadow: 0 8px 28px rgba(76, 54, 170, 0.12);
+  --g-shadow-sm: 0 3px 12px rgba(76, 54, 170, 0.09);
+  --g-grad-brand: linear-gradient(135deg, #7c3aed 0%, #2563eb 100%);
+  --g-grad-sunset: linear-gradient(135deg, #ff8a1f 0%, #ec4899 100%);
+  --g-grad-ocean: linear-gradient(135deg, #38bdf8 0%, #6366f1 100%);
+  --g-grad-fresh: linear-gradient(135deg, #34d399 0%, #0ea5e9 100%);
+  --g-grad-night: linear-gradient(160deg, #1e1b6b 0%, #4c1d95 55%, #7c3aed 100%);
+  --g-page: linear-gradient(160deg, #f5f3ff 0%, #eef4ff 55%, #fff4ea 100%);
+
+  --ion-font-family: 'Nunito Variable', 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --ion-color-primary: #7c3aed;
+  --ion-color-primary-rgb: 124, 58, 237;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #6d32d1;
+  --ion-color-primary-tint: #8a4def;
+  --ion-color-secondary: #2563eb;
+  --ion-color-secondary-rgb: 37, 99, 235;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #2159cf;
+  --ion-color-secondary-tint: #3b74ed;
+  --ion-color-tertiary: #ff8a1f;
+  --ion-color-tertiary-rgb: 255, 138, 31;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+  --ion-color-tertiary-shade: #e07a1b;
+  --ion-color-tertiary-tint: #ff962f;
+  --ion-background-color: #f6f4ff;
+  --ion-text-color: #1f2340;
+  --ion-text-color-rgb: 31, 35, 64;
+}

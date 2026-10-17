@@ -1,7 +1,5 @@
 {
-  "name": "ionic-temp",
-  "integrations": {
-    "capacitor": {}
-  },
+  "name": "grit-app-frontend",
+  "integrations": {},
   "type": "angular-standalone"
 }
